@@ -1,0 +1,26 @@
+@imgurl: "../images/";
+.bgImage(@url, @repeat: no-repeat, @position: 0 0) {
+  background-image: url('@{imgurl}@{url}.png');
+  background-repeat: @repeat;
+  background-position: @position;
+  background-size: 100% 100%;
+}
+
+.lineHeight(@height){
+  height: @height;
+  line-height: @height;
+}
+
+.fontStyle(@size,@color,@textAlign: center,@weight: normal){
+  font-size:@size;
+  color:@color;
+  text-align:@textAlign;
+  font-weight: @weight;
+}
+
+.ellipsis{
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
