@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <button @click="handleRules">{{ configTexts['go'] }}</button>
+    <% if (sentry) { %> <button @click="handleRules">{{ configTexts['go'] }}</button><% } %>
   </div>
 </template>
 
@@ -31,9 +31,9 @@ export default {
       document.title = finalLang.title;
       this.configTexts = finalLang;
     },
-    handleRules() {
+    <% if (sentry) { %> handleRules() {
       this.$router.push({ path: '/rule' });
-    }
+    }<% } %> 
   }
 };
 </script>
