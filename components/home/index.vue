@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <% if (sentry) { %> <button @click="handleRules">{{ configTexts['go'] }}</button><% } %>
+    <% if (router) { %> <button @click="handleRules">{{ configTexts['go'] }}</button><% } %>
   </div>
 </template>
 
