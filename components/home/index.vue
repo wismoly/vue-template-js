@@ -31,7 +31,7 @@ export default {
       document.title = finalLang.title;
       this.configTexts = finalLang;
     },
-    <% if (sentry) { %> handleRules() {
+    <% if (router) { %> handleRules() {
       this.$router.push({ path: '/rule' });
     }<% } %> 
   }
